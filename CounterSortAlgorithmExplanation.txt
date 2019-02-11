@@ -1,0 +1,27 @@
+Dylan Buehler
+2/11/2019
+Data Structures
+
+	To make a counter sort, start by declaring two arrays. The first array is for the
+initial data. This data can be random positive whole numbers. Basically any number that
+can be associated to a location in the array. The data can also be already sorted if
+you want. Then the second array will need to be created with a size equal to the
+biggest number in your main array. The second array will also need to be created with
+zeros in all the locations. This is usually the default value to begin with. Now that
+you have a main array filled with numbers and a second filled with zeros, its time to
+begin the sorting process. First print the main array so you can compare it at the
+end. Now, create a loop that will go through every value in the main array. Inside
+this loop, for every number find that numbers location in the second array plus 1 and
+add 1 to that locations value. If it was 0 add 1 to make it 1. If it was 5 add 1 to
+make it 6. Do this for every value in the main array. When that is done the second
+array should have a count of every occurrence of the location values number. For
+instance if a 5 was in the main array 3 times then the secondary arrays location
+value 6, because the array is zero based, should have a value of 3. Now create a new 
+loop that overrides the main array with the values in the secondary array. This loop 
+should look at the value location of the secondary array and add the location's value 
+the number of times that the number in the secondary array is. So if location 0 has a
+value of 2 put two 0's into the main array. Then if the secondary array location is 1
+and has a value of 0 add nothing to the main array. Finally if the location is 2 and
+has a value of 3, add three 2's to the main array and so on. Once the looping through
+the secondary array is done the values should be sorted. Next, print the main array and
+compare the sorted values to the original printed main. The main should look sorted.
