@@ -12,7 +12,7 @@ namespace Sorting
     {
         //Class Level Variable
         //This number sets the array size but also the amount of data in the FillArray class.
-        public static int ARRAY_SIZE = 100000000;
+        public static int ARRAY_SIZE = 100;
 
         static void Main(string[] args)
         {
@@ -32,13 +32,13 @@ namespace Sorting
 
             WriteLine("Begin - Same Data Sort");
             FillArray.FillArrayData(mainArray, 0);
-            //PrintArray(mainArray);
+            PrintArray(mainArray);
             CountArray(mainArray, secondaryArray);
             WriteLine("\n");
-            //PrintArray(secondaryArray);
+            PrintArray(secondaryArray);
             WriteLine("\n");
             SortArray(mainArray, secondaryArray);
-            //PrintArray(mainArray);
+            PrintArray(mainArray);
             WriteLine("End - Same Data Sort");
         }
 
@@ -48,13 +48,13 @@ namespace Sorting
             mainArray.Clear();
             WriteLine("Begin - Different Values But Sorted");
             FillArray.FillArrayData(mainArray, 1);
-            //PrintArray(mainArray);
+            PrintArray(mainArray);
             CountArray(mainArray, secondaryArray);
             WriteLine("\n");
-            //PrintArray(secondaryArray);
+            PrintArray(secondaryArray);
             WriteLine("\n");
             SortArray(mainArray, secondaryArray);
-            //PrintArray(mainArray);
+            PrintArray(mainArray);
             WriteLine("End - Different Values But Sorted");
         }
 
@@ -64,13 +64,13 @@ namespace Sorting
             mainArray.Clear();
             WriteLine("Begin - Different Values Reverse Sorted");
             FillArray.FillArrayData(mainArray, 2);
-            //PrintArray(mainArray);
+            PrintArray(mainArray);
             CountArray(mainArray, secondaryArray);
             WriteLine("\n");
-            //PrintArray(secondaryArray);
+            PrintArray(secondaryArray);
             WriteLine("\n");
             SortArray(mainArray, secondaryArray);
-            //PrintArray(mainArray);
+            PrintArray(mainArray);
             WriteLine("End - Different Values Reverse Sorted");
         }
 
@@ -80,13 +80,13 @@ namespace Sorting
             mainArray.Clear();
             WriteLine("Begin - Random Data Randomly Ordered");
             FillArray.FillArrayData(mainArray, 3);
-            //PrintArray(mainArray);
+            PrintArray(mainArray);
             CountArray(mainArray, secondaryArray);
             WriteLine("\n");
-            //PrintArray(secondaryArray);
+            PrintArray(secondaryArray);
             WriteLine("\n");
             SortArray(mainArray, secondaryArray);
-            //PrintArray(mainArray);
+            PrintArray(mainArray);
             WriteLine("End - Random Data Randomly Ordered");
         }
 
