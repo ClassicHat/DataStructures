@@ -1,0 +1,10 @@
+Data Structures
+2/12/2019
+
+How long is the list?
+Where should I put it in the list?
+
+TYPES OF LISTS
+1.)	Linked Lists
+2.)	Double Ended Linked Lists
+3.)	Circularly and Doublely Linked Lists
