@@ -1,4 +1,10 @@
-﻿using System;
+﻿/***********************************
+ * Name: Dylan Buehler
+ * Date: 2/12/19
+ * Class: Data Structures
+ * Filename: Driver.cs
+ ***********************************/
+using System;
 using System.Collections;
 using static System.Console;
 using System.Collections.Generic;
@@ -12,6 +18,7 @@ namespace Sorting
     {
         //Class Level Variable
         //This number sets the array size but also the amount of data in the FillArray class.
+        //Must be in increments of 25 for the print array method to print properly.
         public static int ARRAY_SIZE = 100;
 
         static void Main(string[] args)

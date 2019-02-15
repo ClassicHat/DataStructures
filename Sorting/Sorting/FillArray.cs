@@ -1,4 +1,10 @@
-﻿using System;
+﻿/***********************************
+ * Name: Dylan Buehler
+ * Date: 2/12/19
+ * Class: Data Structures
+ * Filename: FillArray.cs
+ ***********************************/
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
