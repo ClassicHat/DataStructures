@@ -11,7 +11,7 @@ namespace RandomTestingCounterSort
     class Driver
     {
         //Class Level Variables
-        public static int ARRAY_SIZE = 100000000;
+        public static int ARRAY_SIZE = 100000;
         
 
         static void Main(string[] args)
@@ -33,11 +33,11 @@ namespace RandomTestingCounterSort
             int[] secondaryArray = new int[ARRAY_SIZE];
             mainArray.Clear();
             FillArray.FillArrayData(mainArray, 3);
-            PrintArray(mainArray);
+            //PrintArray(mainArray);
             CountArray(mainArray, secondaryArray);
-            PrintArray(secondaryArray);
+            //PrintArray(secondaryArray);
             SortArray(mainArray, secondaryArray);
-            PrintArray(mainArray);
+            //PrintArray(mainArray);
             CheckArray(mainArray);
         }//End ManyArray
 
