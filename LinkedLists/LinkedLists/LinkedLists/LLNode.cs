@@ -9,15 +9,14 @@ namespace LinkedLists
     class LLNode
     {
         private int data;
-        private int next;
+        private LLNode next;
 
         public int Data { get => data; set => data = value; }
-        public int Next { get => next; set => next = value; }
+        public LLNode Next { get => next; set => next = value; }
 
         public LLNode()
         {
-            data = Data;
-            next = Next;
+            
         }//End Constructor
     }//End Class LLNode
 }//End Namespace

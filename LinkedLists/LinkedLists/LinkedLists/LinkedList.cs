@@ -18,9 +18,7 @@ namespace LinkedLists
 
         public LinkedList()
         {
-            front = Front;
-            back = Back;
-            current = Current;
+
         }//End Linked List Constructor
     }//End Linked List
 }//End Namespace
