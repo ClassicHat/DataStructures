@@ -36,7 +36,21 @@ namespace LinkedLists
             //Add node2 to the linked list
             list.Back = node2.Next;
 
+            //Create another node
+            LLNode node3 = new LLNode();
+
+            //point to the new node
+            node2.Next = node3;
+
+            //give node3 a value
+            node3.Data = 2;
+
+            //Add node3 to the linked list
+            list.Back = node3.Next;
+
             //Print the elements of the linked list
+            Console.WriteLine(list.Current.Data.ToString());
+            list.Current = list.Current.Next;
             Console.WriteLine(list.Current.Data.ToString());
             list.Current = list.Current.Next;
             Console.WriteLine(list.Current.Data.ToString());
