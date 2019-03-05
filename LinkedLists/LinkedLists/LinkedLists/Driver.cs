@@ -10,6 +10,7 @@ namespace LinkedLists
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
