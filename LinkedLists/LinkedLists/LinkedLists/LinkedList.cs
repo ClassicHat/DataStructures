@@ -16,9 +16,7 @@ namespace LinkedLists
         public LLNode Back { get => back; set => back = value; }
         public LLNode Current { get => current; set => current = value; }
 
-        public LinkedList()
-        {
-
-        }//End Linked List Constructor
+        //Default Constructor
+        public LinkedList(){}
     }//End Linked List
 }//End Namespace

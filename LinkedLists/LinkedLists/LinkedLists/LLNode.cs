@@ -14,9 +14,7 @@ namespace LinkedLists
         public int Data { get => data; set => data = value; }
         public LLNode Next { get => next; set => next = value; }
 
-        public LLNode()
-        {
-            
-        }//End Constructor
+        //Default Constructor
+        public LLNode(){}
     }//End Class LLNode
 }//End Namespace

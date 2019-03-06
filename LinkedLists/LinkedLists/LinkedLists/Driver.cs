@@ -10,54 +10,61 @@ namespace LinkedLists
     {
         static void Main(string[] args)
         {
-            //Instantiate a new node
-            LLNode node = new LLNode();
-
-            //Give the node a value
-            node.Data = 0;
+            //Variables
+            bool isEmpty = true;
+            Random randNum = new Random();
 
             //Create a instance of a linked list
             LinkedList list = new LinkedList();
 
-            //Add the current node to the list
-            list.Front = node;
-            list.Back = node;
-            list.Current = node;
 
-            //Create a new node
-            LLNode node2 = new LLNode();
-
-            //point to the new node
-            node.Next = node2;
-
-            //give node2 a value
-            node2.Data = 1;
-
-            //Add node2 to the linked list
-            list.Back = node2.Next;
-
-            //Create another node
-            LLNode node3 = new LLNode();
-
-            //point to the new node
-            node2.Next = node3;
-
-            //give node3 a value
-            node3.Data = 2;
-
-            //Add node3 to the linked list
-            list.Back = node3.Next;
-
-            //Print the elements of the linked list
-            Console.WriteLine(list.Current.Data.ToString());
-            list.Current = list.Current.Next;
-            Console.WriteLine(list.Current.Data.ToString());
-            list.Current = list.Current.Next;
-            Console.WriteLine(list.Current.Data.ToString());
+            for(int i = 0; i < 10; i++)
+            {
+                //Call the create node method
+                CreateNode(list, isEmpty, randNum);
+                //Set isEmpty to false
+                isEmpty = false;
+            }
+            
+            while(list.Current != list.Back.Next)
+            {
+                Console.WriteLine(list.Current.Data.ToString());
+                list.Current = list.Current.Next;
+            }//End While
 
             //Readkey to stop program
             Console.ReadKey();
             
-        }
-    }
-}
+        }//End Main Method
+
+        public static void CreateNode(LinkedList list, bool isEmpty, Random randNum)
+        {
+            //Instantiate a new node
+            LLNode node = new LLNode();
+
+            //isEmpty = true - Enters the if statement if the linked list is empty
+            if(isEmpty)
+            {
+                //Give the node a value
+                node.Data = randNum.Next(0, 100);
+
+                //Add the current node to the list
+                list.Front = node;
+                list.Back = node;
+                list.Current = node;
+            }
+            else
+            {
+                // list.Back.Next - the last node in the list
+                // setting the pointer to the new node
+                list.Back.Next = node;
+
+                //give the new node a value
+                node.Data = randNum.Next(0, 100);
+
+                //Add node to the linked list
+                list.Back = node;
+            }//End if / else
+        }//End Create Node
+    }//End Class
+}//End Namespace
