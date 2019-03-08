@@ -17,7 +17,6 @@ namespace LinkedLists
             //Create a instance of a linked list
             LinkedList list = new LinkedList();
 
-
             for(int i = 0; i < 10; i++)
             {
                 //Call the create node method
@@ -37,6 +36,14 @@ namespace LinkedLists
             
         }//End Main Method
 
+        /// <summary>
+        /// Expects: a linked list, a bool for if the list is empty or not, a random number generator
+        /// Returns: nothing
+        /// Tasks: Creates a node, gives it a value, and then adds it to the list.
+        /// </summary>
+        /// <param name="list"></param>
+        /// <param name="isEmpty"></param>
+        /// <param name="randNum"></param>
         public static void CreateNode(LinkedList list, bool isEmpty, Random randNum)
         {
             //Instantiate a new node
