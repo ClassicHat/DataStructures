@@ -24,19 +24,19 @@ namespace ArrayBasedStack
             Size = maxSize;
         }//End Constructor
 
-        public static void Push(ArrayList theStack)
+        public static void Push(ArrayList theStack, int numToAdd)
         {
-            
+            theStack.Add(numToAdd);
         }//End Push Method
 
-        public static void Pop(ArrayList theStack)
+        public static void Pop(ArrayList theStack, int maxSize)
         {
-
+            theStack.RemoveAt(maxSize);
         }//End Pop Method
 
-        public static void Peek(ArrayList theStack)
+        public static int Peek(ArrayList theStack, int maxSize)
         {
-
+            return (int)theStack[maxSize];
         }//End Peek Method
     }//End Class
 }//End Namespace
