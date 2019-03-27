@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,36 +8,60 @@ using System.Threading.Tasks;
 
 namespace ArrayBasedStack
 {
-    class ArrayStack
+    public class ArrayStack
     {
         private int capacity;
         private int size;
-        private ArrayList stack;
+        private ArrayList myStack;
 
         public int Capacity { get => capacity; set => capacity = value; }
         public int Size { get => size; set => size = value; }
-        public ArrayList Stack { get => stack; set => stack = value; }
+        public ArrayList MyStack { get => myStack; set => myStack = value; }
 
         //Default Constructor
-        public ArrayStack(ArrayList theStack, int maxSize)
+        public ArrayStack(ArrayList theStack, int maxCap)
         {
-            Stack = theStack;
-            Size = maxSize;
+            MyStack = theStack;
+            Size = 0;
+            Capacity = maxCap;
         }//End Constructor
 
-        public static void Push(ArrayList theStack, int numToAdd)
+        public void Push(int numToAdd)
         {
-            theStack.Add(numToAdd);
+            if(Size != Capacity)
+            {
+                //Adds a value to the stack
+                MyStack.Add(numToAdd);
+
+                //Add one to the Size
+                Size++;
+            }
+            else
+            {
+                WriteLine($"Error - 'Push Method' - Capacity Reached! Value '{numToAdd.ToString()}' Not Added To The Stack");
+            }//End if / else
         }//End Push Method
 
-        public static void Pop(ArrayList theStack, int maxSize)
+        public void Pop()
         {
-            theStack.RemoveAt(maxSize);
+            if(Size != 0)
+            {
+                //Remove the value that is on top
+                MyStack.RemoveAt(Size - 1);
+
+                //Remove one from the Size
+                Size--;
+            }
+            else
+            {
+                WriteLine($"Error - 'Pop Method' - Stack Is Empty!");
+            }//End Pop Method
         }//End Pop Method
 
-        public static int Peek(ArrayList theStack, int maxSize)
-        {
-            return (int)theStack[maxSize];
+        public int Peek()
+        { 
+            //Return the value of the top element
+            return (int) MyStack[Size - 1];
         }//End Peek Method
     }//End Class
 }//End Namespace
