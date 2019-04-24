@@ -1,0 +1,19 @@
+Dylan Buehler
+Original Submission: 1/31/2019
+Edited Submission: 4/24/2019
+
+Problem 1
+Best Case: Constant Runtime
+Worst Case: Linear Runtime
+
+Problem 2
+Best Case: Constant Runtime
+Worst Case: Logarithmic Runtime
+
+Problem 3
+Best Case: Exponential Runtime
+Worst Case: Exponential Runtime
+
+Problem 4
+Best Case: Linear Runtime
+Worst Case: Linear Runtime
